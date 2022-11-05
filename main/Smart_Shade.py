@@ -296,93 +296,54 @@ while True:
                 if angletb > 180 :
                     angletb = 180
                 if angletb1 < 0 :
-                    angletb = 180 
+                    angletb1 = 0 
                 set_angle(15,angletb)
                 set_angle(0,angletb1)
                 sleep(0.8)
         
             elif avgtop > avgbot:
                 angletb = angletb - 10
+                angletb1 = angletb1 + 10
                 if angletb < 0 :
                     angletb = 0 
+                if angletb1 > 180 :
+                    angletb1 = 180 
                 set_angle(15,angletb)
-                set_angle(0,angletb)
+                set_angle(0,angletb1)
                 sleep(0.8)
         
             else :
                 set_angle(15,angletb)
-                set_angle(0,angletb)
+                set_angle(0,angletb1)
                 sleep(0.8)
            
- ##               
-           
-#         if avgright < avgleft:
-#             anglelr = anglelr + 10
-#             if anglelr > 180 :
-#                 anglelr = 180 
-#             set_angle(15,anglelr)
-#             sleep(0.8)
-#                 
-#                 
-# 
-#         elif avgright > avgleft:
-#             anglelr = anglelr - 10
-#             if angletb < 0 :
-#                 angletb = 0 
-#             set_angle(15,anglelr)
-#             sleep(0.8)
-#             
-#         else :
-#             set_angle(15,anglelr)
-#             sleep(0.8)
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-        
-#         if avgtop < avgbot :
-#             angletb = angletb + 10
-#             if angletb > 180 :
-#                 angletb = 180 
-#             set_angle(0,angletb)
-#             sleep(0.8)
-#     
-#         elif avgtop > avgbot:
-#             angletb = angletb - 10
-#             if angletb < 0 :
-#                 angletb = 0 
-#             set_angle(0,angletb)
-#             sleep(0.8)
-#     
-#         else :
-#             set_angle(0,angletb)
-#             sleep(0.8)
-           
-                
-           
-#         if avgright < avgleft:
-#             anglelr = anglelr + 10
-#             if anglelr > 180 :
-#                 anglelr = 180 
-#             set_angle(0,anglelr)
-#             sleep(0.8)
-#                 
-#                 
-# 
-#         elif avgright > avgleft:
-#             anglelr = anglelr - 10
-#             if angletb < 0 :
-#                 angletb = 0 
-#             set_angle(0,anglelr)
-#             sleep(0.8)
-#             
-#         else :
-#             set_angle(0,anglelr)
-#             sleep(0.8)
-                    
 
-                
+
+
+            if  avgright < avgleft:
+                anglelr = anglelr + 10
+                anglelr1 = anglelr1 -10
+                if anglelr > 180 :
+                    anglelr = 180
+                if anglelr1 < 0 :
+                    anglelr1 = 0 
+                set_angle(1,anglelr)
+                set_angle(2,anglelr1)
+                sleep(0.8)
+        
+            elif avgtop > avgbot:
+                anglelr = anglelr - 10
+                anglelr1 = anglelr1 + 10
+                if anglelr < 0 :
+                    anglelr = 0 
+                if anglelr1 > 180 :
+                    anglelr1 = 180 
+                set_angle(1,anglelr)
+                set_angle(2,anglelr1)
+                sleep(0.8)
+        
+            else :
+                set_angle(1,anglelr)
+                set_angle(2,anglelr1)
+                sleep(0.8)
 
