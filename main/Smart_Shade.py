@@ -3,8 +3,7 @@ import spidev
 from time import sleep
 import Adafruit_PCA9685
 import Adafruit_DHT
-# from RPLCD.i2c import CharLCD
-# lcd=CharLCD('PCF8574',0x27)
+
 
 robot_handle = Adafruit_PCA9685.PCA9685()
 servoMin = 150
@@ -77,8 +76,8 @@ GPIO.output(out3,GPIO.LOW)
 GPIO.output(out4,GPIO.LOW)
 set_angle(0,0)
 set_angle(15,180)
-set_angle(2,0)
-set_angle(3,0) #first value       
+set_angle(1,0)
+set_angle(2,0) #first value       
     
 
     
